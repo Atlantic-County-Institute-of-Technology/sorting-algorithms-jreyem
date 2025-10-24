@@ -3,6 +3,9 @@ from selection_sort import selection_sort
 from insertion_sort import insertion_sort
 import random
 
+outer_pass = 0
+inner_pass = 0
+
 
 def main():
     global values
@@ -28,14 +31,20 @@ def main():
         elif selection == 2:
             bubble_sort(values)
             print(values)
+            print(f"Outer Pass: {outer_pass}\n"
+                  f"Inner Pass: {inner_pass}")
 
         elif selection == 3:
             selection_sort(values)
             print(values)
+            print(f"Outer Pass: {outer_pass}\n"
+                  f"Inner Pass: {inner_pass}")
 
         elif selection == 4:
             insertion_sort(values)
             print(values)
+            print(f"Outer Pass: {outer_pass}\n"
+                  f"Inner Pass: {inner_pass}")
 
         else:
             print("Bro that isn't an option. Try again lil bro. 🕊️")

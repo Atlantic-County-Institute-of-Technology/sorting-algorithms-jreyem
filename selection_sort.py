@@ -1,5 +1,5 @@
-
 def selection_sort(values):
+
     outer_pass = 0
     inner_pass = 0
 
@@ -15,5 +15,4 @@ def selection_sort(values):
             # Swap the found minimum element with the first element
             values[i], values[min_index] = values[min_index], values[i]
 
-    print(outer_pass)
-    print(inner_pass)
+    return outer_pass
